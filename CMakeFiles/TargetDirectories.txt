@@ -1,4 +1,4 @@
-/home/nizar/game_rsc/CMakeFiles/app.dir
+/home/nizar/game_rsc/CMakeFiles/tile_editor.dir
 /home/nizar/game_rsc/CMakeFiles/package.dir
 /home/nizar/game_rsc/CMakeFiles/package_source.dir
 /home/nizar/game_rsc/CMakeFiles/edit_cache.dir

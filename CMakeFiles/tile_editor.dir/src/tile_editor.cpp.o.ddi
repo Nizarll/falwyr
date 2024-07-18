@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

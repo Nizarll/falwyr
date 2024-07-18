@@ -1,0 +1,22 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "/home/nizar/game_rsc",
+	"dir-cur-src" : "/home/nizar/game_rsc",
+	"dir-top-bld" : "/home/nizar/game_rsc",
+	"dir-top-src" : "/home/nizar/game_rsc",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/raylib-src/src",
+		"_deps/raylib-src/src/external/glfw/include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/nizar/game_rsc/CMakeFiles/tile_editor.dir"
+}

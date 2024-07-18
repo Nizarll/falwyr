@@ -182,17 +182,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named app
+# Target rules for targets named tile_editor
 
 # Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
+tile_editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tile_editor
+.PHONY : tile_editor
 
 # fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
+tile_editor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/build
+.PHONY : tile_editor/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -246,77 +246,29 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-src/entity.o: src/entity.cpp.o
-.PHONY : src/entity.o
+src/tile_editor.o: src/tile_editor.cpp.o
+.PHONY : src/tile_editor.o
 
 # target to build an object file
-src/entity.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.o
-.PHONY : src/entity.cpp.o
+src/tile_editor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o
+.PHONY : src/tile_editor.cpp.o
 
-src/entity.i: src/entity.cpp.i
-.PHONY : src/entity.i
-
-# target to preprocess a source file
-src/entity.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.i
-.PHONY : src/entity.cpp.i
-
-src/entity.s: src/entity.cpp.s
-.PHONY : src/entity.s
-
-# target to generate assembly for a file
-src/entity.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.s
-.PHONY : src/entity.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/tile_editor.i: src/tile_editor.cpp.i
+.PHONY : src/tile_editor.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/tile_editor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.i
+.PHONY : src/tile_editor.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/tiles.o: src/tiles.cpp.o
-.PHONY : src/tiles.o
-
-# target to build an object file
-src/tiles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.o
-.PHONY : src/tiles.cpp.o
-
-src/tiles.i: src/tiles.cpp.i
-.PHONY : src/tiles.i
-
-# target to preprocess a source file
-src/tiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.i
-.PHONY : src/tiles.cpp.i
-
-src/tiles.s: src/tiles.cpp.s
-.PHONY : src/tiles.s
+src/tile_editor.s: src/tile_editor.cpp.s
+.PHONY : src/tile_editor.s
 
 # target to generate assembly for a file
-src/tiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.s
-.PHONY : src/tiles.cpp.s
+src/tile_editor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.s
+.PHONY : src/tile_editor.cpp.s
 
 # Help Target
 help:
@@ -334,18 +286,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
-	@echo "... app"
 	@echo "... glfw"
 	@echo "... raylib"
-	@echo "... src/entity.o"
-	@echo "... src/entity.i"
-	@echo "... src/entity.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/tiles.o"
-	@echo "... src/tiles.i"
-	@echo "... src/tiles.s"
+	@echo "... tile_editor"
+	@echo "... src/tile_editor.o"
+	@echo "... src/tile_editor.i"
+	@echo "... src/tile_editor.s"
 .PHONY : help
 
 

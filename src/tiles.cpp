@@ -20,5 +20,4 @@ void tile::draw(v2 pos) {
                 Rectangle{150.0f, 280.0f, 80.0f, 80.0f},
                 v2{8.0f, 8.0f}, 
                 .0f,WHITE);
-
 }

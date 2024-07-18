@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/entity.cpp.o -o src/app  _deps/raylib-build/raylib/libraylib.a -lm -lpthread /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so _deps/raylib-build/raylib/external/glfw/src/libglfw3.a /usr/lib/librt.a -lm -ldl
