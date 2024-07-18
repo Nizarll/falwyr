@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-DGRAPHICS_API_OPENGL_33",
+      "-DPLATFORM_DESKTOP",
+      "-I/home/nizar/game_rsc/build/_deps/raylib-src/src",
+      "-I/home/nizar/game_rsc/build/_deps/raylib-src/src/external/glfw/include",
+      "-std=gnu++23",
+      "-c",
+      "-o",
+      "CMakeFiles/app.dir/src/main.cpp.o",
+      "/home/nizar/game_rsc/src/main.cpp"
+    ],
+    "directory": "/home/nizar/game_rsc/build",
+    "file": "/home/nizar/game_rsc/src/main.cpp",
+    "output": "/home/nizar/game_rsc/build/CMakeFiles/app.dir/src/main.cpp.o"
+  }
+]
