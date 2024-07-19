@@ -1,4 +1,4 @@
-# Install script for directory: /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src
+# Install script for directory: /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/game_rsc
+CMAKE_SOURCE_DIR = /home/nizar/falwyr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/game_rsc
+CMAKE_BINARY_DIR = /home/nizar/falwyr
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,9 +152,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles /home/nizar/game_rsc//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles /home/nizar/falwyr//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,17 +182,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tile_editor
+# Target rules for targets named app
 
 # Build rule for target.
-tile_editor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tile_editor
-.PHONY : tile_editor
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-tile_editor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/build
-.PHONY : tile_editor/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -246,29 +246,77 @@ update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-src/tile_editor.o: src/tile_editor.cpp.o
-.PHONY : src/tile_editor.o
+src/entity.o: src/entity.cpp.o
+.PHONY : src/entity.o
 
 # target to build an object file
-src/tile_editor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o
-.PHONY : src/tile_editor.cpp.o
+src/entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.o
+.PHONY : src/entity.cpp.o
 
-src/tile_editor.i: src/tile_editor.cpp.i
-.PHONY : src/tile_editor.i
+src/entity.i: src/entity.cpp.i
+.PHONY : src/entity.i
 
 # target to preprocess a source file
-src/tile_editor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.i
-.PHONY : src/tile_editor.cpp.i
+src/entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.i
+.PHONY : src/entity.cpp.i
 
-src/tile_editor.s: src/tile_editor.cpp.s
-.PHONY : src/tile_editor.s
+src/entity.s: src/entity.cpp.s
+.PHONY : src/entity.s
 
 # target to generate assembly for a file
-src/tile_editor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tile_editor.dir/build.make CMakeFiles/tile_editor.dir/src/tile_editor.cpp.s
-.PHONY : src/tile_editor.cpp.s
+src/entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/entity.cpp.s
+.PHONY : src/entity.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/tiles.o: src/tiles.cpp.o
+.PHONY : src/tiles.o
+
+# target to build an object file
+src/tiles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.o
+.PHONY : src/tiles.cpp.o
+
+src/tiles.i: src/tiles.cpp.i
+.PHONY : src/tiles.i
+
+# target to preprocess a source file
+src/tiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.i
+.PHONY : src/tiles.cpp.i
+
+src/tiles.s: src/tiles.cpp.s
+.PHONY : src/tiles.s
+
+# target to generate assembly for a file
+src/tiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.s
+.PHONY : src/tiles.cpp.s
 
 # Help Target
 help:
@@ -286,12 +334,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... app"
 	@echo "... glfw"
 	@echo "... raylib"
-	@echo "... tile_editor"
-	@echo "... src/tile_editor.o"
-	@echo "... src/tile_editor.i"
-	@echo "... src/tile_editor.s"
+	@echo "... src/entity.o"
+	@echo "... src/entity.i"
+	@echo "... src/entity.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/tiles.o"
+	@echo "... src/tiles.i"
+	@echo "... src/tiles.s"
 .PHONY : help
 
 

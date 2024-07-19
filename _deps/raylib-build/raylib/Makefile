@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/game_rsc
+CMAKE_SOURCE_DIR = /home/nizar/falwyr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/game_rsc
+CMAKE_BINARY_DIR = /home/nizar/falwyr
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/nizar/game_rsc
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+	cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nizar/game_rsc && $(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles /home/nizar/game_rsc/_deps/raylib-build/raylib//CMakeFiles/progress.marks
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles 0
+	cd /home/nizar/falwyr && $(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles /home/nizar/falwyr/_deps/raylib-build/raylib//CMakeFiles/progress.marks
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/clean
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/preinstall
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/preinstall
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nizar/game_rsc && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nizar/falwyr && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ raylib: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 
 # fast build rule for target.
 raylib/fast:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
 .PHONY : raylib/fast
 
 raudio.o: raudio.c.o
@@ -200,7 +200,7 @@ raudio.o: raudio.c.o
 
 # target to build an object file
 raudio.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o
 .PHONY : raudio.c.o
 
 raudio.i: raudio.c.i
@@ -208,7 +208,7 @@ raudio.i: raudio.c.i
 
 # target to preprocess a source file
 raudio.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.i
 .PHONY : raudio.c.i
 
 raudio.s: raudio.c.s
@@ -216,7 +216,7 @@ raudio.s: raudio.c.s
 
 # target to generate assembly for a file
 raudio.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.s
 .PHONY : raudio.c.s
 
 rcore.o: rcore.c.o
@@ -224,7 +224,7 @@ rcore.o: rcore.c.o
 
 # target to build an object file
 rcore.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o
 .PHONY : rcore.c.o
 
 rcore.i: rcore.c.i
@@ -232,7 +232,7 @@ rcore.i: rcore.c.i
 
 # target to preprocess a source file
 rcore.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.i
 .PHONY : rcore.c.i
 
 rcore.s: rcore.c.s
@@ -240,7 +240,7 @@ rcore.s: rcore.c.s
 
 # target to generate assembly for a file
 rcore.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.s
 .PHONY : rcore.c.s
 
 rmodels.o: rmodels.c.o
@@ -248,7 +248,7 @@ rmodels.o: rmodels.c.o
 
 # target to build an object file
 rmodels.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o
 .PHONY : rmodels.c.o
 
 rmodels.i: rmodels.c.i
@@ -256,7 +256,7 @@ rmodels.i: rmodels.c.i
 
 # target to preprocess a source file
 rmodels.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.i
 .PHONY : rmodels.c.i
 
 rmodels.s: rmodels.c.s
@@ -264,7 +264,7 @@ rmodels.s: rmodels.c.s
 
 # target to generate assembly for a file
 rmodels.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.s
 .PHONY : rmodels.c.s
 
 rshapes.o: rshapes.c.o
@@ -272,7 +272,7 @@ rshapes.o: rshapes.c.o
 
 # target to build an object file
 rshapes.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o
 .PHONY : rshapes.c.o
 
 rshapes.i: rshapes.c.i
@@ -280,7 +280,7 @@ rshapes.i: rshapes.c.i
 
 # target to preprocess a source file
 rshapes.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.i
 .PHONY : rshapes.c.i
 
 rshapes.s: rshapes.c.s
@@ -288,7 +288,7 @@ rshapes.s: rshapes.c.s
 
 # target to generate assembly for a file
 rshapes.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.s
 .PHONY : rshapes.c.s
 
 rtext.o: rtext.c.o
@@ -296,7 +296,7 @@ rtext.o: rtext.c.o
 
 # target to build an object file
 rtext.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o
 .PHONY : rtext.c.o
 
 rtext.i: rtext.c.i
@@ -304,7 +304,7 @@ rtext.i: rtext.c.i
 
 # target to preprocess a source file
 rtext.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.i
 .PHONY : rtext.c.i
 
 rtext.s: rtext.c.s
@@ -312,7 +312,7 @@ rtext.s: rtext.c.s
 
 # target to generate assembly for a file
 rtext.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.s
 .PHONY : rtext.c.s
 
 rtextures.o: rtextures.c.o
@@ -320,7 +320,7 @@ rtextures.o: rtextures.c.o
 
 # target to build an object file
 rtextures.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o
 .PHONY : rtextures.c.o
 
 rtextures.i: rtextures.c.i
@@ -328,7 +328,7 @@ rtextures.i: rtextures.c.i
 
 # target to preprocess a source file
 rtextures.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.i
 .PHONY : rtextures.c.i
 
 rtextures.s: rtextures.c.s
@@ -336,7 +336,7 @@ rtextures.s: rtextures.c.s
 
 # target to generate assembly for a file
 rtextures.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.s
 .PHONY : rtextures.c.s
 
 utils.o: utils.c.o
@@ -344,7 +344,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -352,7 +352,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.i
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -360,7 +360,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/nizar/game_rsc && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.s
+	cd /home/nizar/falwyr && $(MAKE) $(MAKESILENT) -f _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -410,6 +410,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nizar/game_rsc && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nizar/falwyr && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,0 @@
-ninja_dyndep_version = 1.0
-build CMakeFiles/app.dir/src/main.cpp.o: dyndep
-
-build CMakeFiles/app.dir/src/entity.cpp.o: dyndep
-
-build CMakeFiles/app.dir/src/tiles.cpp.o: dyndep
-

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/game_rsc
+CMAKE_SOURCE_DIR = /home/nizar/falwyr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/game_rsc
+CMAKE_BINARY_DIR = /home/nizar/falwyr
 
 # Include any dependencies generated for this target.
 include CMakeFiles/app.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/game_rsc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /home/nizar/game_rsc/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/falwyr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /home/nizar/falwyr/src/main.cpp
 
 CMakeFiles/app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/game_rsc/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/falwyr/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
 
 CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/game_rsc/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/falwyr/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
 CMakeFiles/app.dir/src/entity.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/entity.cpp.o: src/entity.cpp
 CMakeFiles/app.dir/src/entity.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/game_rsc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/entity.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/entity.cpp.o -MF CMakeFiles/app.dir/src/entity.cpp.o.d -o CMakeFiles/app.dir/src/entity.cpp.o -c /home/nizar/game_rsc/src/entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/falwyr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/entity.cpp.o -MF CMakeFiles/app.dir/src/entity.cpp.o.d -o CMakeFiles/app.dir/src/entity.cpp.o -c /home/nizar/falwyr/src/entity.cpp
 
 CMakeFiles/app.dir/src/entity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/entity.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/game_rsc/src/entity.cpp > CMakeFiles/app.dir/src/entity.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/falwyr/src/entity.cpp > CMakeFiles/app.dir/src/entity.cpp.i
 
 CMakeFiles/app.dir/src/entity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/entity.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/game_rsc/src/entity.cpp -o CMakeFiles/app.dir/src/entity.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/falwyr/src/entity.cpp -o CMakeFiles/app.dir/src/entity.cpp.s
 
 CMakeFiles/app.dir/src/tiles.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/tiles.cpp.o: src/tiles.cpp
 CMakeFiles/app.dir/src/tiles.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/game_rsc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/tiles.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/tiles.cpp.o -MF CMakeFiles/app.dir/src/tiles.cpp.o.d -o CMakeFiles/app.dir/src/tiles.cpp.o -c /home/nizar/game_rsc/src/tiles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nizar/falwyr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/tiles.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/tiles.cpp.o -MF CMakeFiles/app.dir/src/tiles.cpp.o.d -o CMakeFiles/app.dir/src/tiles.cpp.o -c /home/nizar/falwyr/src/tiles.cpp
 
 CMakeFiles/app.dir/src/tiles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/tiles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/game_rsc/src/tiles.cpp > CMakeFiles/app.dir/src/tiles.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nizar/falwyr/src/tiles.cpp > CMakeFiles/app.dir/src/tiles.cpp.i
 
 CMakeFiles/app.dir/src/tiles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/tiles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/game_rsc/src/tiles.cpp -o CMakeFiles/app.dir/src/tiles.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nizar/falwyr/src/tiles.cpp -o CMakeFiles/app.dir/src/tiles.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -132,7 +132,7 @@ app: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 app: /usr/lib/librt.a
 app: /usr/lib/libm.so
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nizar/game_rsc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nizar/falwyr/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -144,6 +144,6 @@ CMakeFiles/app.dir/clean:
 .PHONY : CMakeFiles/app.dir/clean
 
 CMakeFiles/app.dir/depend:
-	cd /home/nizar/game_rsc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/game_rsc /home/nizar/game_rsc /home/nizar/game_rsc /home/nizar/game_rsc /home/nizar/game_rsc/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/nizar/falwyr && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/falwyr /home/nizar/falwyr /home/nizar/falwyr /home/nizar/falwyr /home/nizar/falwyr/CMakeFiles/app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/app.dir/depend
 

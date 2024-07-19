@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
 
-CXX_INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+CXX_INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
 
 CXX_FLAGS = -std=gnu++23
 

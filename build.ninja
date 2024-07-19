@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/nizar/game_rsc/
+cmake_ninja_workdir = /home/nizar/falwyr/
 # =============================================================================
 # Object build statements for EXECUTABLE target tile_editor
 
@@ -44,26 +44,28 @@ cmake_ninja_workdir = /home/nizar/game_rsc/
 
 build cmake_object_order_depends_target_tile_editor: phony || cmake_object_order_depends_target_glfw cmake_object_order_depends_target_raylib
 
-build CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi: CXX_SCAN__tile_editor_ /home/nizar/game_rsc/src/tile_editor.cpp || cmake_object_order_depends_target_tile_editor
+build CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi: CXX_SCAN__tile_editor_ /home/nizar/falwyr/src/tile_editor.cpp || cmake_object_order_depends_target_tile_editor
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi
   FLAGS = -std=gnu++23
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJ_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o
   PREPROCESSED_OUTPUT_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi.i
 
-build CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o: CXX_COMPILER__tile_editor_scanned_ /home/nizar/game_rsc/src/tile_editor.cpp | CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.modmap || cmake_object_order_depends_target_tile_editor CMakeFiles/tile_editor.dir/CXX.dd
+build CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o: CXX_COMPILER__tile_editor_scanned_ /home/nizar/falwyr/src/tile_editor.cpp | CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.modmap || cmake_object_order_depends_target_tile_editor CMakeFiles/tile_editor.dir/CXX.dd
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.d
   DYNDEP_MODULE_MAP_FILE = CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.modmap
   FLAGS = -std=gnu++23
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = CMakeFiles/tile_editor.dir
   OBJECT_FILE_DIR = CMakeFiles/tile_editor.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/tile_editor.dir/
+  TARGET_PDB = tile_editor.pdb
   dyndep = CMakeFiles/tile_editor.dir/CXX.dd
 
-build CMakeFiles/tile_editor.dir/CXX.dd | /home/nizar/game_rsc/CMakeFiles/tile_editor.dir/CXXModules.json CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.modmap: CXX_DYNDEP__tile_editor_ CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi | /home/nizar/game_rsc/CMakeFiles/tile_editor.dir/CXXDependInfo.json
+build CMakeFiles/tile_editor.dir/CXX.dd | /home/nizar/falwyr/CMakeFiles/tile_editor.dir/CXXModules.json CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.modmap: CXX_DYNDEP__tile_editor_ CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi | /home/nizar/falwyr/CMakeFiles/tile_editor.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -78,15 +80,16 @@ build tile_editor: CXX_EXECUTABLE_LINKER__tile_editor_ CMakeFiles/tile_editor.di
   OBJECT_DIR = CMakeFiles/tile_editor.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/tile_editor.dir/
   TARGET_FILE = tile_editor
-  TARGET_PDB = tile_editor.dbg
+  TARGET_PDB = tile_editor.pdb
 
 
 #############################################
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -98,7 +101,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -110,7 +113,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/ccmake -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/ccmake -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -122,7 +125,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cmake --regenerate-during-build -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cmake --regenerate-during-build -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -140,7 +143,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -152,7 +155,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -164,7 +167,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -173,7 +176,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/nizar/game_rsc/CMakeLists.txt
+# /home/nizar/falwyr/CMakeLists.txt
 # =============================================================================
 
 
@@ -187,7 +190,7 @@ build _deps/raylib-build/uninstall: phony _deps/raylib-build/CMakeFiles/uninstal
 # Utility command for package
 
 build _deps/raylib-build/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -199,7 +202,7 @@ build _deps/raylib-build/package: phony _deps/raylib-build/CMakeFiles/package.ut
 # Utility command for package_source
 
 build _deps/raylib-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -211,7 +214,7 @@ build _deps/raylib-build/package_source: phony _deps/raylib-build/CMakeFiles/pac
 # Utility command for edit_cache
 
 build _deps/raylib-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/ccmake -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/ccmake -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -223,7 +226,7 @@ build _deps/raylib-build/edit_cache: phony _deps/raylib-build/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build _deps/raylib-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake --regenerate-during-build -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake --regenerate-during-build -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -241,7 +244,7 @@ build _deps/raylib-build/list_install_components: phony
 # Utility command for install
 
 build _deps/raylib-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -253,7 +256,7 @@ build _deps/raylib-build/install: phony _deps/raylib-build/CMakeFiles/install.ut
 # Utility command for install/local
 
 build _deps/raylib-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -265,7 +268,7 @@ build _deps/raylib-build/install/local: phony _deps/raylib-build/CMakeFiles/inst
 # Utility command for install/strip
 
 build _deps/raylib-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -277,11 +280,11 @@ build _deps/raylib-build/install/strip: phony _deps/raylib-build/CMakeFiles/inst
 # Custom command for _deps/raylib-build/CMakeFiles/uninstall
 
 build _deps/raylib-build/CMakeFiles/uninstall | ${cmake_ninja_workdir}_deps/raylib-build/CMakeFiles/uninstall: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake -P /home/nizar/game_rsc/_deps/raylib-build/cmake_uninstall.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake -P /home/nizar/falwyr/_deps/raylib-build/cmake_uninstall.cmake
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/nizar/game_rsc/_deps/raylib-src/CMakeLists.txt
+# /home/nizar/falwyr/_deps/raylib-src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -293,61 +296,75 @@ build _deps/raylib-build/CMakeFiles/uninstall | ${cmake_ninja_workdir}_deps/rayl
 
 build cmake_object_order_depends_target_raylib: phony || cmake_object_order_depends_target_glfw
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/rcore.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/rcore.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/rmodels.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/rmodels.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/rshapes.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/rshapes.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/rtext.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/rtext.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/rtextures.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/rtextures.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/utils.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/utils.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
-build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/raudio.c || cmake_object_order_depends_target_raylib
+build _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o: C_COMPILER__raylib_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/raudio.c || cmake_object_order_depends_target_raylib
   DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
   DEP_FILE = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src -isystem /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src -isystem /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
 
 # =============================================================================
@@ -362,15 +379,16 @@ build _deps/raylib-build/raylib/libraylib.a: C_STATIC_LIBRARY_LINKER__raylib_ _d
   OBJECT_DIR = _deps/raylib-build/raylib/CMakeFiles/raylib.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raylib.pdb
   TARGET_FILE = _deps/raylib-build/raylib/libraylib.a
-  TARGET_PDB = raylib.a.dbg
+  TARGET_PDB = _deps/raylib-build/raylib/libraylib.pdb
 
 
 #############################################
 # Utility command for package
 
 build _deps/raylib-build/raylib/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -382,7 +400,7 @@ build _deps/raylib-build/raylib/package: phony _deps/raylib-build/raylib/CMakeFi
 # Utility command for package_source
 
 build _deps/raylib-build/raylib/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -394,7 +412,7 @@ build _deps/raylib-build/raylib/package_source: phony _deps/raylib-build/raylib/
 # Utility command for edit_cache
 
 build _deps/raylib-build/raylib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib && /usr/bin/ccmake -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib && /usr/bin/ccmake -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -406,7 +424,7 @@ build _deps/raylib-build/raylib/edit_cache: phony _deps/raylib-build/raylib/CMak
 # Utility command for rebuild_cache
 
 build _deps/raylib-build/raylib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib && /usr/bin/cmake --regenerate-during-build -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib && /usr/bin/cmake --regenerate-during-build -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -424,7 +442,7 @@ build _deps/raylib-build/raylib/list_install_components: phony
 # Utility command for install
 
 build _deps/raylib-build/raylib/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -436,7 +454,7 @@ build _deps/raylib-build/raylib/install: phony _deps/raylib-build/raylib/CMakeFi
 # Utility command for install/local
 
 build _deps/raylib-build/raylib/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -448,7 +466,7 @@ build _deps/raylib-build/raylib/install/local: phony _deps/raylib-build/raylib/C
 # Utility command for install/strip
 
 build _deps/raylib-build/raylib/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -457,7 +475,7 @@ build _deps/raylib-build/raylib/install/strip: phony _deps/raylib-build/raylib/C
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/nizar/game_rsc/_deps/raylib-src/cmake/GlfwImport.cmake
+# /home/nizar/falwyr/_deps/raylib-src/cmake/GlfwImport.cmake
 # =============================================================================
 
 
@@ -465,7 +483,7 @@ build _deps/raylib-build/raylib/install/strip: phony _deps/raylib-build/raylib/C
 # Utility command for package
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -477,7 +495,7 @@ build _deps/raylib-build/raylib/external/glfw/package: phony _deps/raylib-build/
 # Utility command for package_source
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -489,7 +507,7 @@ build _deps/raylib-build/raylib/external/glfw/package_source: phony _deps/raylib
 # Utility command for edit_cache
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw && /usr/bin/ccmake -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw && /usr/bin/ccmake -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -501,7 +519,7 @@ build _deps/raylib-build/raylib/external/glfw/edit_cache: phony _deps/raylib-bui
 # Utility command for rebuild_cache
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake --regenerate-during-build -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake --regenerate-during-build -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -519,7 +537,7 @@ build _deps/raylib-build/raylib/external/glfw/list_install_components: phony
 # Utility command for install
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -531,7 +549,7 @@ build _deps/raylib-build/raylib/external/glfw/install: phony _deps/raylib-build/
 # Utility command for install/local
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -543,7 +561,7 @@ build _deps/raylib-build/raylib/external/glfw/install/local: phony _deps/raylib-
 # Utility command for install/strip
 
 build _deps/raylib-build/raylib/external/glfw/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -552,7 +570,7 @@ build _deps/raylib-build/raylib/external/glfw/install/strip: phony _deps/raylib-
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/CMakeLists.txt
+# /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -564,189 +582,235 @@ build _deps/raylib-build/raylib/external/glfw/install/strip: phony _deps/raylib-
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/context.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/platform.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -Wdeclaration-after-statement
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/posix_module.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/posix_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/posix_time.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/posix_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/x11_init.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/x11_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/x11_monitor.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/x11_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/x11_window.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/x11_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/glx_context.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/glx_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/linux_joystick.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/linux_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
-build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src/posix_poll.c || cmake_object_order_depends_target_glfw
+build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o: C_COMPILER__glfw_unscanned_ /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src/posix_poll.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_DEFAULT_SOURCE -D_GLFW_X11
   DEP_FILE = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o.d
   FLAGS = -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall
-  INCLUDES = -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/include -I/home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src -I/home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+  INCLUDES = -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/include -I/home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src -I/home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
 
 # =============================================================================
@@ -761,8 +825,9 @@ build _deps/raylib-build/raylib/external/glfw/src/libglfw3.a: C_STATIC_LIBRARY_L
   OBJECT_DIR = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
   TARGET_FILE = _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = _deps/raylib-build/raylib/external/glfw/src/libglfw3.pdb
 
 
 #############################################
@@ -775,7 +840,7 @@ build _deps/raylib-build/raylib/external/glfw/src/update_mappings: phony _deps/r
 # Utility command for package
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackConfig.cmake
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -787,7 +852,7 @@ build _deps/raylib-build/raylib/external/glfw/src/package: phony _deps/raylib-bu
 # Utility command for package_source
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
+  COMMAND = cd /home/nizar/falwyr && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -799,7 +864,7 @@ build _deps/raylib-build/raylib/external/glfw/src/package_source: phony _deps/ra
 # Utility command for edit_cache
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/ccmake -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/ccmake -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -811,7 +876,7 @@ build _deps/raylib-build/raylib/external/glfw/src/edit_cache: phony _deps/raylib
 # Utility command for rebuild_cache
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake --regenerate-during-build -S/home/nizar/game_rsc -B/home/nizar/game_rsc
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake --regenerate-during-build -S/home/nizar/falwyr -B/home/nizar/falwyr
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -829,7 +894,7 @@ build _deps/raylib-build/raylib/external/glfw/src/list_install_components: phony
 # Utility command for install
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -841,7 +906,7 @@ build _deps/raylib-build/raylib/external/glfw/src/install: phony _deps/raylib-bu
 # Utility command for install/local
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -853,7 +918,7 @@ build _deps/raylib-build/raylib/external/glfw/src/install/local: phony _deps/ray
 # Utility command for install/strip
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/raylib-build/raylib/external/glfw/src/all
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -865,7 +930,7 @@ build _deps/raylib-build/raylib/external/glfw/src/install/strip: phony _deps/ray
 # Custom command for _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings
 
 build _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings | ${cmake_ninja_workdir}_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings: CUSTOM_COMMAND
-  COMMAND = cd /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/src && /usr/bin/cmake -P /home/nizar/game_rsc/_deps/raylib-src/src/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+  COMMAND = cd /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/src && /usr/bin/cmake -P /home/nizar/falwyr/_deps/raylib-src/src/external/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
@@ -889,35 +954,35 @@ build update_mappings: phony _deps/raylib-build/raylib/external/glfw/src/update_
 # =============================================================================
 
 #############################################
-# Folder: /home/nizar/game_rsc
+# Folder: /home/nizar/falwyr
 
 build all: phony tile_editor _deps/raylib-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/nizar/game_rsc/_deps/raylib-build
+# Folder: /home/nizar/falwyr/_deps/raylib-build
 
 build _deps/raylib-build/all: phony _deps/raylib-build/raylib/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/nizar/game_rsc/_deps/raylib-build/raylib
+# Folder: /home/nizar/falwyr/_deps/raylib-build/raylib
 
 build _deps/raylib-build/raylib/all: phony _deps/raylib-build/raylib/libraylib.a _deps/raylib-build/raylib/external/glfw/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw
+# Folder: /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw
 
 build _deps/raylib-build/raylib/external/glfw/all: phony _deps/raylib-build/raylib/external/glfw/src/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/nizar/game_rsc/_deps/raylib-build/raylib/external/glfw/src
+# Folder: /home/nizar/falwyr/_deps/raylib-build/raylib/external/glfw/src
 
 build _deps/raylib-build/raylib/external/glfw/src/all: phony _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 
@@ -928,14 +993,14 @@ build _deps/raylib-build/raylib/external/glfw/src/all: phony _deps/raylib-build/
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/download.cmake.in /usr/share/cmake/Modules/ExternalProject/extractfile.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake/Modules/FetchContent/package-config.cmake.in /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.30.0/CMakeCCompiler.cmake CMakeFiles/3.30.0/CMakeCXXCompiler.cmake CMakeFiles/3.30.0/CMakeSystem.cmake CMakeFiles/fc-stamp/raylib/download-raylib.cmake CMakeFiles/fc-stamp/raylib/extract-raylib.cmake CMakeFiles/fc-stamp/raylib/verify-raylib.cmake CMakeFiles/fc-tmp/raylib/download.cmake CMakeFiles/fc-tmp/raylib/patch.cmake CMakeFiles/fc-tmp/raylib/update.cmake CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/download.cmake.in /usr/share/cmake/Modules/ExternalProject/extractfile.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake/Modules/FetchContent/package-config.cmake.in /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.30.0/CMakeCCompiler.cmake CMakeFiles/3.30.0/CMakeCXXCompiler.cmake CMakeFiles/3.30.0/CMakeSystem.cmake CMakeFiles/fc-stamp/raylib/download-raylib.cmake CMakeFiles/fc-stamp/raylib/extract-raylib.cmake CMakeFiles/fc-stamp/raylib/verify-raylib.cmake CMakeFiles/fc-tmp/raylib/download.cmake CMakeFiles/fc-tmp/raylib/patch.cmake CMakeFiles/fc-tmp/raylib/update.cmake CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/download.cmake.in /usr/share/cmake/Modules/ExternalProject/extractfile.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake/Modules/FetchContent/package-config.cmake.in /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.30.0/CMakeCCompiler.cmake CMakeFiles/3.30.0/CMakeCXXCompiler.cmake CMakeFiles/3.30.0/CMakeSystem.cmake CMakeFiles/fc-stamp/raylib/download-raylib.cmake CMakeFiles/fc-stamp/raylib/extract-raylib.cmake CMakeFiles/fc-stamp/raylib/verify-raylib.cmake CMakeFiles/fc-tmp/raylib/download.cmake CMakeFiles/fc-tmp/raylib/patch.cmake CMakeFiles/fc-tmp/raylib/update.cmake CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt: phony
+build /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CPack.cmake /usr/share/cmake/Modules/CPackComponent.cmake /usr/share/cmake/Modules/CheckCCompilerFlag.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/ExternalProject/PatchInfo.txt.in /usr/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in /usr/share/cmake/Modules/ExternalProject/download.cmake.in /usr/share/cmake/Modules/ExternalProject/extractfile.cmake.in /usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake /usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in /usr/share/cmake/Modules/FetchContent.cmake /usr/share/cmake/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake/Modules/FetchContent/package-config.cmake.in /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.30.0/CMakeCCompiler.cmake CMakeFiles/3.30.0/CMakeCXXCompiler.cmake CMakeFiles/3.30.0/CMakeSystem.cmake CMakeFiles/fc-stamp/raylib/download-raylib.cmake CMakeFiles/fc-stamp/raylib/extract-raylib.cmake CMakeFiles/fc-stamp/raylib/verify-raylib.cmake CMakeFiles/fc-tmp/raylib/download.cmake CMakeFiles/fc-tmp/raylib/patch.cmake CMakeFiles/fc-tmp/raylib/update.cmake CMakeLists.txt _deps/raylib-src/CMakeLists.txt _deps/raylib-src/CMakeOptions.txt _deps/raylib-src/cmake/AddIfFlagCompiles.cmake _deps/raylib-src/cmake/BuildOptions.cmake _deps/raylib-src/cmake/CompileDefinitions.cmake _deps/raylib-src/cmake/CompilerFlags.cmake _deps/raylib-src/cmake/EnumOption.cmake _deps/raylib-src/cmake/GlfwImport.cmake _deps/raylib-src/cmake/InstallConfigurations.cmake _deps/raylib-src/cmake/JoinPaths.cmake _deps/raylib-src/cmake/LibraryConfigurations.cmake _deps/raylib-src/cmake/LibraryPathToLinkerFlags.cmake _deps/raylib-src/cmake/PackConfigurations.cmake _deps/raylib-src/cmake/PopulateConfigVariablesLocally.cmake _deps/raylib-src/cmake/Uninstall.cmake _deps/raylib-src/cmake/raylib-config-version.cmake _deps/raylib-src/raylib.pc.in _deps/raylib-src/src/CMakeLists.txt _deps/raylib-src/src/external/glfw/CMake/glfw3.pc.in _deps/raylib-src/src/external/glfw/CMake/glfw3Config.cmake.in _deps/raylib-src/src/external/glfw/CMakeLists.txt _deps/raylib-src/src/external/glfw/src/CMakeLists.txt: phony
 
 
 #############################################

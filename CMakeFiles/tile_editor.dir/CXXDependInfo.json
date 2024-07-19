@@ -5,10 +5,10 @@
 	"compiler-simulate-id" : "",
 	"config" : "",
 	"cxx-modules" : {},
-	"dir-cur-bld" : "/home/nizar/game_rsc",
-	"dir-cur-src" : "/home/nizar/game_rsc",
-	"dir-top-bld" : "/home/nizar/game_rsc",
-	"dir-top-src" : "/home/nizar/game_rsc",
+	"dir-cur-bld" : "/home/nizar/falwyr",
+	"dir-cur-src" : "/home/nizar/falwyr",
+	"dir-top-bld" : "/home/nizar/falwyr",
+	"dir-top-src" : "/home/nizar/falwyr",
 	"exports" : [],
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
@@ -18,5 +18,5 @@
 	],
 	"language" : "CXX",
 	"linked-target-dirs" : [],
-	"module-dir" : "/home/nizar/game_rsc/CMakeFiles/tile_editor.dir"
+	"module-dir" : "/home/nizar/falwyr/CMakeFiles/tile_editor.dir"
 }

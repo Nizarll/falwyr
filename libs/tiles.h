@@ -1,49 +1,33 @@
 #pragma once
 #include "types.h"
 #include "raylib.h"
-#include <variant>
 #include <vector>
 
 struct tile;
 struct layer;
-struct square;
-struct tri;
-
-using tiles = std::vector<std::vector<tile>>;
-using layers = std::vector<std::vector<layer>>;
 
 enum class Shape : uint {
   SQUARE = 0,
   TRI,
 };
 
-enum class Tiles : uint {
-  GRASS_L = 0,
-  GRASS_R,
-  GRASS,
+enum class Tiles : unsigned int {
+  GRASS_LT = 0,
+  GRASS_T,
+  GRASS_LR,
+  PLAT_L,
+  PLAT,
+  PLAT_R,
+  PLAT_LB,
+  PLAT_B,
+  PLAT_RB,
+  EMPTY,
 };
+
 
 struct tile {
-  Texture2D atlas;
-  Shape s;
+  u16 kind;
+  u16 shape;
   v2 data;
   v2 size;
-  u16 kind;
-  void init();
-  void draw(v2 pos);
-  void switchbox();
 };
-
-struct layer {
-  u8 opacity;
-  tiles tls;
-};
-
-struct chunk {
-  v2 size;
-  layers lrs;
-  void add_layer(layer l);
-};
-
-void hitbox(square s);
-void hitbox(tri s);

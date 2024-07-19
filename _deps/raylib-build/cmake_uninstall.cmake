@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/nizar/game_rsc/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/nizar/game_rsc/install_manifest.txt")
+if(NOT EXISTS "/home/nizar/falwyr/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/nizar/falwyr/install_manifest.txt")
 endif()
 
-file(READ "/home/nizar/game_rsc/install_manifest.txt" files)
+file(READ "/home/nizar/falwyr/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
