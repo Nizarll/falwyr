@@ -6,15 +6,16 @@
 #include <iterator>
 
 static Texture2D img;
-static auto icon_size = 60;
 
+constexpr auto red = Color{17, 23, 33};
+constexpr auto icon_size = 60;
 constexpr auto tile_size = 16;
-constexpr auto num_tiles = 9;
-constexpr auto left_margin= 30;
+constexpr auto left_margin= 40;
 constexpr auto top_margin= 120;
 constexpr auto max_row = 3;
-constexpr auto step = 60 + 8;
+constexpr auto step = icon_size + 8;
 constexpr auto map_size = 1024;
+constexpr auto num_tiles = (u16)Tiles::LEN - 1;
 
 typedef Vector2 v2;
 using pair = std::pair<Rectangle, Rectangle>;
@@ -26,9 +27,16 @@ std::array<tiles, map_size> tls{};
 static v2 orgn{icon_size / 2.0f, icon_size / 2.0f};
 static size_t curr{};
 
+static Rectangle Selector{.0f, .0f, 220.0f, 200.0f};
+
 bool bounding_box(const v2 pos, const Rectangle& p){
-  return pos.x <= p.x + p.width / 2.0f && pos.y >= p.x - p.width / 2.0f &&
+  return pos.x <= p.x + p.width / 2.0f && pos.x >= p.x - p.width / 2.0f &&
   pos.y <= p.y + p.height / 2.0f && pos.y >= p.y - p.height / 2.0f;
+}
+
+bool bounding_box_vzero(const v2 pos, const Rectangle& p){
+  return pos.x <= p.x + p.width && pos.x >= p.x &&
+  pos.y <= p.y + p.height && pos.y >= p.y;
 }
 
 int get_hovered_tile() {
@@ -77,23 +85,22 @@ void init() {
   });
 }
 void draw_panel() {
+  const auto i = get_hovered_tile();
   std::for_each(std::execution::par, recs.begin(), recs.end(), [&](const auto& rec){
-    const auto i = get_hovered_tile();
+    DrawTexturePro(img, rec.second, rec.first, v2{icon_size / 2.0f, icon_size / 2.0f}, .0f, WHITE);
     if (i >= 0 &&  recs[i] == rec) {
       DrawRectangle((int)rec.first.x - icon_size / 2.0f, (int)rec.first.y - icon_size / 2.0f,(int)icon_size, (int)icon_size, ColorAlpha(WHITE, .3f));
-      curr = i;
     }
   });
 }
 
 void draw_ui() {
   draw_panel();
-  icon_size = 60.0f * GetScreenWidth() / 1920;
   for (size_t x = 0; x < map_size; x++) {
     for (size_t y = 0; y < map_size; y++) {
       if (tls[x][y].kind != (u16)Tiles::EMPTY) {
         size_t kind = tls[x][y].kind;
-        DrawTexturePro(img, recs[kind].second, Rectangle{x * 60, y * 60, 60, 60}, v2{0, 0}, .0f, WHITE);
+        DrawTexturePro(img, recs[kind].second, Rectangle{x * icon_size, y * icon_size, icon_size, icon_size}, v2{0, 0}, .0f, WHITE);
       }
     }
   }
@@ -102,23 +109,30 @@ void draw_ui() {
 void handle_input() {
   f32 mouse_x = GetMouseX();
   f32 mouse_y = GetMouseY();
-  if (IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-    int x = std::floor(mouse_x / icon_size);
-    int y = std::floor(mouse_y / icon_size);
-    std::cout << "position : " << x * 60 << ", " << y * 60 << "\n";
-    std::cout << "mouse position : " << GetMouseX() << ", " << GetMouseY() << "\n";
-    tls[x][y].shape = (u16) Shape::SQUARE;
-    tls[x][y].kind  = (u16) curr;
+  if (!IsMouseButtonDown(MOUSE_BUTTON_LEFT)) return;
+  if (bounding_box_vzero(v2{mouse_x, mouse_y}, Selector)) {
+    const auto i = get_hovered_tile();
+    if(i < 0) return;
+    std::cout << "curr is : " << i << "\n";
+    curr = i;
+    return;
   }
+  int x = std::floor(mouse_x / icon_size);
+  int y = std::floor(mouse_y / icon_size);
+  std::cout << "position : " << x * 60 << ", " << y * 60 << "\n";
+  std::cout << "mouse position : " << GetMouseX() << ", " << GetMouseY() << "\n";
+  tls[x][y].shape = (u16) Shape::SQUARE;
+  tls[x][y].kind  = (u16) curr;
 }
 
 int main() {
   init();
   while(!WindowShouldClose()){
+    Selector.height = GetScreenHeight();
     handle_input();
     BeginDrawing();
-    ClearBackground(WHITE);
-    DrawRectangleRec(Rectangle{.0f, .0f, GetScreenWidth() / 4, GetScreenHeight()}, ColorAlpha(RED, .1f));
+    ClearBackground(red);
+    DrawRectangleRec(Selector, ColorAlpha(BLACK, .45f));
     draw_ui();
     EndDrawing();
   }

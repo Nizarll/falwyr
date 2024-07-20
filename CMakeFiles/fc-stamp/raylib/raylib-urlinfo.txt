@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/falwyr/CMakeFiles/fc-stamp/raylib/download-raylib.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/falwyr/CMakeFiles/fc-stamp/raylib/verify-raylib.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/falwyr/CMakeFiles/fc-stamp/raylib/extract-raylib.cmake
-source_dir=/home/nizar/falwyr/_deps/raylib-src
-work_dir=/home/nizar/falwyr/_deps
+command=/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/game_rsc/CMakeFiles/fc-stamp/raylib/download-raylib.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/game_rsc/CMakeFiles/fc-stamp/raylib/verify-raylib.cmake;COMMAND;/usr/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/home/nizar/game_rsc/CMakeFiles/fc-stamp/raylib/extract-raylib.cmake
+source_dir=/home/nizar/game_rsc/_deps/raylib-src
+work_dir=/home/nizar/game_rsc/_deps
 url(s)=https://github.com/raysan5/raylib/archive/refs/tags/5.0.tar.gz
 hash=
       no_extract=

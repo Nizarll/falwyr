@@ -1,16 +1,16 @@
-# 0 "/home/nizar/falwyr/src/tile_editor.cpp"
+# 0 "/home/nizar/game_rsc/src/tile_editor.cpp"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/nizar/falwyr/src/tile_editor.cpp"
-# 1 "/home/nizar/falwyr/src/../libs/tiles.h" 1
+# 1 "/home/nizar/game_rsc/src/tile_editor.cpp"
+# 1 "/home/nizar/game_rsc/src/../libs/tiles.h" 1
        
-# 1 "/home/nizar/falwyr/src/../libs/types.h" 1
+# 1 "/home/nizar/game_rsc/src/../libs/types.h" 1
        
 
-# 1 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h" 1
-# 82 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h"
+# 1 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h" 1
+# 82 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h"
 # 1 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h" 1 3 4
 # 40 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h" 3 4
 
@@ -18,10 +18,10 @@
 typedef __builtin_va_list __gnuc_va_list;
 # 103 "/usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h" 3 4
 typedef __gnuc_va_list va_list;
-# 83 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h" 2
-# 204 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h"
+# 83 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h" 2
+# 204 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h"
 
-# 204 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h"
+# 204 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h"
 typedef struct Vector2 {
     float x;
     float y;
@@ -757,7 +757,7 @@ typedef unsigned char *(*LoadFileDataCallback)(const char *fileName, int *dataSi
 typedef bool (*SaveFileDataCallback)(const char *fileName, void *data, int dataSize);
 typedef char *(*LoadFileTextCallback)(const char *fileName);
 typedef bool (*SaveFileTextCallback)(const char *fileName, char *text);
-# 950 "/home/nizar/falwyr/_deps/raylib-src/src/raylib.h"
+# 950 "/home/nizar/game_rsc/_deps/raylib-src/src/raylib.h"
 extern "C" {
 
 
@@ -1468,7 +1468,7 @@ typedef void (*AudioCallback)(void *bufferData, unsigned int frames);
 
 
 }
-# 4 "/home/nizar/falwyr/src/../libs/types.h" 2
+# 4 "/home/nizar/game_rsc/src/../libs/types.h" 2
 # 1 "/usr/include/c++/14.1.1/stdfloat" 1 3
 # 33 "/usr/include/c++/14.1.1/stdfloat" 3
 # 1 "/usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
@@ -1623,7 +1623,7 @@ namespace std
 
 
 }
-# 5 "/home/nizar/falwyr/src/../libs/types.h" 2
+# 5 "/home/nizar/game_rsc/src/../libs/types.h" 2
 # 1 "/usr/include/c++/14.1.1/cstdint" 1 3
 # 32 "/usr/include/c++/14.1.1/cstdint" 3
        
@@ -1876,17 +1876,17 @@ namespace std
   using ::uintptr_t;
 # 142 "/usr/include/c++/14.1.1/cstdint" 3
 }
-# 6 "/home/nizar/falwyr/src/../libs/types.h" 2
+# 6 "/home/nizar/game_rsc/src/../libs/types.h" 2
 
 
-# 7 "/home/nizar/falwyr/src/../libs/types.h"
+# 7 "/home/nizar/game_rsc/src/../libs/types.h"
 typedef int8_t i8;
 typedef uint8_t u8;
 typedef Vector2 v2;
 typedef uint8_t u16;
 typedef unsigned int uint;
 typedef std::float32_t f32;
-# 3 "/home/nizar/falwyr/src/../libs/tiles.h" 2
+# 3 "/home/nizar/game_rsc/src/../libs/tiles.h" 2
 
 # 1 "/usr/include/c++/14.1.1/vector" 1 3
 # 58 "/usr/include/c++/14.1.1/vector" 3
@@ -29725,10 +29725,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
 }
-# 5 "/home/nizar/falwyr/src/../libs/tiles.h" 2
+# 5 "/home/nizar/game_rsc/src/../libs/tiles.h" 2
 
 
-# 6 "/home/nizar/falwyr/src/../libs/tiles.h"
+# 6 "/home/nizar/game_rsc/src/../libs/tiles.h"
 struct tile;
 struct layer;
 
@@ -29748,6 +29748,7 @@ enum class Tiles : unsigned int {
   PLAT_B,
   PLAT_RB,
   EMPTY,
+  LEN,
 };
 
 
@@ -29757,7 +29758,7 @@ struct tile {
   v2 data;
   v2 size;
 };
-# 2 "/home/nizar/falwyr/src/tile_editor.cpp" 2
+# 2 "/home/nizar/game_rsc/src/tile_editor.cpp" 2
 # 1 "/usr/include/c++/14.1.1/cmath" 1 3
 # 39 "/usr/include/c++/14.1.1/cmath" 3
        
@@ -43533,7 +43534,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 3 "/home/nizar/falwyr/src/tile_editor.cpp" 2
+# 3 "/home/nizar/game_rsc/src/tile_editor.cpp" 2
 # 1 "/usr/include/c++/14.1.1/algorithm" 1 3
 # 58 "/usr/include/c++/14.1.1/algorithm" 3
        
@@ -57034,7 +57035,7 @@ lexicographical_compare(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _
 
 }
 # 86 "/usr/include/c++/14.1.1/algorithm" 2 3
-# 4 "/home/nizar/falwyr/src/tile_editor.cpp" 2
+# 4 "/home/nizar/game_rsc/src/tile_editor.cpp" 2
 # 1 "/usr/include/c++/14.1.1/execution" 1 3
 # 28 "/usr/include/c++/14.1.1/execution" 3
        
@@ -120468,7 +120469,7 @@ uninitialized_value_construct_n(_ExecutionPolicy&& __exec, _ForwardIterator __fi
 
 }
 # 56 "/usr/include/c++/14.1.1/execution" 2 3
-# 5 "/home/nizar/falwyr/src/tile_editor.cpp" 2
+# 5 "/home/nizar/game_rsc/src/tile_editor.cpp" 2
 # 1 "/usr/include/c++/14.1.1/iostream" 1 3
 # 36 "/usr/include/c++/14.1.1/iostream" 3
        
@@ -122128,21 +122129,22 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 6 "/home/nizar/falwyr/src/tile_editor.cpp" 2
+# 6 "/home/nizar/game_rsc/src/tile_editor.cpp" 2
 
 
 
-# 8 "/home/nizar/falwyr/src/tile_editor.cpp"
+# 8 "/home/nizar/game_rsc/src/tile_editor.cpp"
 static Texture2D img;
-static auto icon_size = 60;
 
+constexpr auto red = Color{17, 23, 33};
+constexpr auto icon_size = 60;
 constexpr auto tile_size = 16;
-constexpr auto num_tiles = 9;
-constexpr auto left_margin= 30;
+constexpr auto left_margin= 40;
 constexpr auto top_margin= 120;
 constexpr auto max_row = 3;
-constexpr auto step = 60 + 8;
+constexpr auto step = icon_size + 8;
 constexpr auto map_size = 1024;
+constexpr auto num_tiles = (u16)Tiles::LEN - 1;
 
 typedef Vector2 v2;
 using pair = std::pair<Rectangle, Rectangle>;
@@ -122154,9 +122156,16 @@ std::array<tiles, map_size> tls{};
 static v2 orgn{icon_size / 2.0f, icon_size / 2.0f};
 static size_t curr{};
 
+static Rectangle Selector{.0f, .0f, 220.0f, 200.0f};
+
 bool bounding_box(const v2 pos, const Rectangle& p){
-  return pos.x <= p.x + p.width / 2.0f && pos.y >= p.x - p.width / 2.0f &&
+  return pos.x <= p.x + p.width / 2.0f && pos.x >= p.x - p.width / 2.0f &&
   pos.y <= p.y + p.height / 2.0f && pos.y >= p.y - p.height / 2.0f;
+}
+
+bool bounding_box_vzero(const v2 pos, const Rectangle& p){
+  return pos.x <= p.x + p.width && pos.x >= p.x &&
+  pos.y <= p.y + p.height && pos.y >= p.y;
 }
 
 int get_hovered_tile() {
@@ -122205,19 +122214,17 @@ void init() {
   });
 }
 void draw_panel() {
+  const auto i = get_hovered_tile();
   std::for_each(std::execution::par, recs.begin(), recs.end(), [&](const auto& rec){
-    DrawTexturePro(img, rec.second, rec.first, orgn, .0f, Color{ 255, 255, 255, 255 });
-    const auto i = get_hovered_tile();
+    DrawTexturePro(img, rec.second, rec.first, v2{icon_size / 2.0f, icon_size / 2.0f}, .0f, Color{ 255, 255, 255, 255 });
     if (i >= 0 && recs[i] == rec) {
       DrawRectangle((int)rec.first.x - icon_size / 2.0f, (int)rec.first.y - icon_size / 2.0f,(int)icon_size, (int)icon_size, ColorAlpha(Color{ 255, 255, 255, 255 }, .3f));
-      curr = i;
     }
   });
 }
 
 void draw_ui() {
   draw_panel();
-  icon_size = 60.0f * GetScreenWidth() / 1920;
   for (size_t x = 0; x < map_size; x++) {
     for (size_t y = 0; y < map_size; y++) {
       if (tls[x][y].kind != (u16)Tiles::EMPTY) {
@@ -122231,23 +122238,30 @@ void draw_ui() {
 void handle_input() {
   f32 mouse_x = GetMouseX();
   f32 mouse_y = GetMouseY();
-  if (IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-    int x = std::floor(mouse_x / icon_size);
-    int y = std::floor(mouse_y / icon_size);
-    std::cout << "position : " << x * 60 << ", " << y * 60 << "\n";
-    std::cout << "mouse position : " << GetMouseX() << ", " << GetMouseY() << "\n";
-    tls[x][y].shape = (u16) Shape::SQUARE;
-    tls[x][y].kind = (u16) curr;
+  if (!IsMouseButtonDown(MOUSE_BUTTON_LEFT)) return;
+  if (bounding_box_vzero(v2{mouse_x, mouse_y}, Selector)) {
+    const auto i = get_hovered_tile();
+    if(i < 0) return;
+    std::cout << "curr is : " << i << "\n";
+    curr = i;
+    return;
   }
+  int x = std::floor(mouse_x / icon_size);
+  int y = std::floor(mouse_y / icon_size);
+  std::cout << "position : " << x * 60 << ", " << y * 60 << "\n";
+  std::cout << "mouse position : " << GetMouseX() << ", " << GetMouseY() << "\n";
+  tls[x][y].shape = (u16) Shape::SQUARE;
+  tls[x][y].kind = (u16) curr;
 }
 
 int main() {
   init();
   while(!WindowShouldClose()){
+    Selector.height = GetScreenHeight();
     handle_input();
     BeginDrawing();
-    ClearBackground(Color{ 255, 255, 255, 255 });
-    DrawRectangleRec(Rectangle{.0f, .0f, GetScreenWidth() / 4, GetScreenHeight()}, ColorAlpha(Color{ 230, 41, 55, 255 }, .1f));
+    ClearBackground(red);
+    DrawRectangleRec(Selector, ColorAlpha(Color{ 0, 0, 0, 255 }, .45f));
     draw_ui();
     EndDrawing();
   }

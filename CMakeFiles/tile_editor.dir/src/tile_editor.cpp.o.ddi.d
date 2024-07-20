@@ -1,8 +1,8 @@
 CMakeFiles/tile_editor.dir/src/tile_editor.cpp.o.ddi: \
- /home/nizar/falwyr/src/tile_editor.cpp /usr/include/stdc-predef.h \
- /home/nizar/falwyr/src/../libs/tiles.h \
- /home/nizar/falwyr/src/../libs/types.h \
- /home/nizar/falwyr/_deps/raylib-src/src/raylib.h \
+ /home/nizar/game_rsc/src/tile_editor.cpp /usr/include/stdc-predef.h \
+ /home/nizar/game_rsc/src/../libs/tiles.h \
+ /home/nizar/game_rsc/src/../libs/types.h \
+ /home/nizar/game_rsc/_deps/raylib-src/src/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
  /usr/include/c++/14.1.1/stdfloat \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \

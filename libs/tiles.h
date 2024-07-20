@@ -22,6 +22,7 @@ enum class Tiles : unsigned int {
   PLAT_B,
   PLAT_RB,
   EMPTY,
+  LEN,
 };
 
 

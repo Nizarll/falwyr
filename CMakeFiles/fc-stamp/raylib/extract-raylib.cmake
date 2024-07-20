@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "/home/nizar/falwyr/_deps/raylib-tmp/5.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/nizar/falwyr/_deps/raylib-src" ABSOLUTE)
+get_filename_component(filename "/home/nizar/game_rsc/_deps/raylib-tmp/5.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/nizar/game_rsc/_deps/raylib-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

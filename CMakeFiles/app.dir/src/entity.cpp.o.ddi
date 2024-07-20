@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/app.dir/src/entity.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
