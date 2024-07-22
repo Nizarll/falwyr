@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/falwyr
+CMAKE_SOURCE_DIR = /home/nizar/game_rsc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/falwyr
+CMAKE_BINARY_DIR = /home/nizar/game_rsc
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include _deps/raylib-build/CMakeFiles/uninstall.dir/compiler_depend.make
 include _deps/raylib-build/CMakeFiles/uninstall.dir/progress.make
 
 _deps/raylib-build/CMakeFiles/uninstall:
-	cd /home/nizar/falwyr/_deps/raylib-build && /usr/bin/cmake -P /home/nizar/falwyr/_deps/raylib-build/cmake_uninstall.cmake
+	cd /home/nizar/game_rsc/_deps/raylib-build && /usr/bin/cmake -P /home/nizar/game_rsc/_deps/raylib-build/cmake_uninstall.cmake
 
 uninstall: _deps/raylib-build/CMakeFiles/uninstall
 uninstall: _deps/raylib-build/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ _deps/raylib-build/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : _deps/raylib-build/CMakeFiles/uninstall.dir/build
 
 _deps/raylib-build/CMakeFiles/uninstall.dir/clean:
-	cd /home/nizar/falwyr/_deps/raylib-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/nizar/game_rsc/_deps/raylib-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : _deps/raylib-build/CMakeFiles/uninstall.dir/clean
 
 _deps/raylib-build/CMakeFiles/uninstall.dir/depend:
-	cd /home/nizar/falwyr && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/falwyr /home/nizar/falwyr/_deps/raylib-src /home/nizar/falwyr /home/nizar/falwyr/_deps/raylib-build /home/nizar/falwyr/_deps/raylib-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/nizar/game_rsc && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nizar/game_rsc /home/nizar/game_rsc/_deps/raylib-src /home/nizar/game_rsc /home/nizar/game_rsc/_deps/raylib-build /home/nizar/game_rsc/_deps/raylib-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/raylib-build/CMakeFiles/uninstall.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nizar/falwyr
+CMAKE_SOURCE_DIR = /home/nizar/game_rsc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nizar/falwyr
+CMAKE_BINARY_DIR = /home/nizar/game_rsc
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/falwyr/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/nizar/game_rsc/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,9 +152,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles /home/nizar/falwyr//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles /home/nizar/game_rsc//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/falwyr/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nizar/game_rsc/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -294,30 +294,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/tiles.o: src/tiles.cpp.o
-.PHONY : src/tiles.o
-
-# target to build an object file
-src/tiles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.o
-.PHONY : src/tiles.cpp.o
-
-src/tiles.i: src/tiles.cpp.i
-.PHONY : src/tiles.i
-
-# target to preprocess a source file
-src/tiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.i
-.PHONY : src/tiles.cpp.i
-
-src/tiles.s: src/tiles.cpp.s
-.PHONY : src/tiles.s
-
-# target to generate assembly for a file
-src/tiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/tiles.cpp.s
-.PHONY : src/tiles.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -343,9 +319,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/tiles.o"
-	@echo "... src/tiles.i"
-	@echo "... src/tiles.s"
 .PHONY : help
 
 

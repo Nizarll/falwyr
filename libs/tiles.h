@@ -3,8 +3,9 @@
 #include "raylib.h"
 #include <vector>
 
+constexpr auto level_size = 256;
+
 struct tile;
-struct layer;
 
 enum class Shape : uint {
   SQUARE = 0,
@@ -21,14 +22,15 @@ enum class Tiles : unsigned int {
   PLAT_LB,
   PLAT_B,
   PLAT_RB,
+  GRASS_UPL,
+  GRASS_UPR,
+  GRASS_UPBR,
+  GRASS_UPBL,
   EMPTY,
   LEN,
 };
 
-
 struct tile {
   u16 kind;
   u16 shape;
-  v2 data;
-  v2 size;
 };

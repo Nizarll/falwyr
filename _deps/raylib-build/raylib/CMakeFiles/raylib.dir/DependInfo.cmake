@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nizar/falwyr/_deps/raylib-src/src/raudio.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/rcore.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/rmodels.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/rshapes.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/rtext.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/rtextures.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o.d"
-  "/home/nizar/falwyr/_deps/raylib-src/src/utils.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/raudio.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/rcore.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/rmodels.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/rshapes.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/rtext.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/rtextures.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o.d"
+  "/home/nizar/game_rsc/_deps/raylib-src/src/utils.c" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o" "gcc" "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

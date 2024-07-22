@@ -19,7 +19,7 @@ void entity::draw() {
   let& anim= *anims[curr];
   DrawTexturePro(anim.sht.t2d,
                  Rectangle{anim._curr * anim.spr_size.x, .0f, anim.spr_size.x, anim.spr_size.y},
-                 Rectangle{200.0f, 200.0f, anim.size.x,anim.size.y},
+                 Rectangle{200.0f, 420.0f, anim.size.x,anim.size.y},
                  v2{anim.size.x / 2.0f, anim.size.y / 2.0f}, 
                  .0f,
                  WHITE);
