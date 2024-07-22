@@ -1,7 +1,13 @@
 #include "../libs/entity.h"
 #include "../libs/levels.h"
 #include "../libs/tiles.h"
+
 #include <cmath>
+#include <cstdlib>
+#define PHYSAC_STATIC
+#define PHYSAC_IMPLEMENTATION
+#include <raylib.h>
+
 #include <algorithm>
 #include <fstream>
 #include <functional>
@@ -9,7 +15,6 @@
 #include <execution>
 #include <iostream>
 #include <iterator>
-#include <raylib.h>
 #include <raymath.h>
 #include <unistd.h>
 #include <utility>
@@ -37,6 +42,7 @@ void draw_lv1() {
 }
 
 void init() {
+  InitPhysics();
   img = LoadTexture("resources/tilesheet.png");
   int source_x{}, source_y{};
   std::for_each(std::execution::par, recs.begin(), recs.end(), [&](auto& p){
@@ -50,6 +56,14 @@ void init() {
       source_y += tile_size;
     }
   });
+}
+
+void update_physics(){
+  int bodiesCount = GetPhysicsBodiesCount();
+  for (int i = 0; i < bodiesCount; i++)
+  {
+    PhysicsBody body = GetPhysicsBody(i);
+  }
 }
 
 int main() {
@@ -66,16 +80,23 @@ int main() {
     10
   };
   anim_vec anims{&walk};
-  entity player;
+  entity player(anims, v2{100, 100}, v2{WIDTH/2.0f, HEIGHT/2.0f});
+  player.curr = (u16)Anims::RUN;
   player.anims = anims;
-  player.curr = (u16) Anims::RUN;
   while (!WindowShouldClose()) {
+    update_physics();
     BeginDrawing();
     ClearBackground(sky);
+    if (IsKeyDown(KEY_D))
+      player.body->velocity.x += 1.0f;
+    if (IsKeyDown(KEY_A))
+      player.body->velocity.x -= 1.0f;
     draw_lv1();
     player.draw();
     player.update(GetFrameTime());
     EndDrawing();
   }
+  CloseWindow();
+  ClosePhysics();
   return EXIT_SUCCESS;
 }

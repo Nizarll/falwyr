@@ -1,12 +1,22 @@
 #pragma once
-#include "types.h"
+
+#include <raylib.h>
 #include <cmath>
+#include <cstdlib>
+#include <cstdio>
+#include "types.h"
 #include <iostream>
 #include <vector>
-#include <raylib.h>
+
+#define PHYSAC_STATIC
+#define PHYSAC_IMPLEMENTATION
+#include "physac.h"
+
 
 #define WIDTH  800
 #define HEIGHT 800
+
+typedef PhysicsBody phbody;
 
 enum class Anims : uint {
   RUN = 0,
@@ -36,10 +46,11 @@ struct anim {
 
 struct entity {
   std::vector<anim*> anims;
-  v2 pos;
+  phbody body;
   v2 size;
   u16 curr;
-  // state s;
+  //state s;
+  entity(std::vector<anim*>& anims, v2 size, v2 pos);
   void update(f32 dt);
   void draw();
 };

@@ -4,7 +4,9 @@
 CMakeFiles/app.dir/src/entity.cpp.o
  /home/nizar/game_rsc/src/entity.cpp
  /home/nizar/game_rsc/_deps/raylib-src/src/raylib.h
+ /home/nizar/game_rsc/_deps/raylib-src/src/raymath.h
  /home/nizar/game_rsc/libs/entity.h
+ /home/nizar/game_rsc/libs/physac.h
  /home/nizar/game_rsc/libs/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -192,6 +194,7 @@ CMakeFiles/app.dir/src/entity.cpp.o
  /usr/include/c++/14.1.1/istream
  /usr/include/c++/14.1.1/limits
  /usr/include/c++/14.1.1/locale
+ /usr/include/c++/14.1.1/math.h
  /usr/include/c++/14.1.1/new
  /usr/include/c++/14.1.1/numbers
  /usr/include/c++/14.1.1/optional
@@ -200,6 +203,7 @@ CMakeFiles/app.dir/src/entity.cpp.o
  /usr/include/c++/14.1.1/span
  /usr/include/c++/14.1.1/stdexcept
  /usr/include/c++/14.1.1/stdfloat
+ /usr/include/c++/14.1.1/stdlib.h
  /usr/include/c++/14.1.1/streambuf
  /usr/include/c++/14.1.1/string
  /usr/include/c++/14.1.1/string_view
@@ -254,6 +258,7 @@ CMakeFiles/app.dir/src/entity.cpp.o
  /usr/include/sys/cdefs.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
+ /usr/include/sys/time.h
  /usr/include/sys/types.h
  /usr/include/time.h
  /usr/include/wchar.h
@@ -268,6 +273,7 @@ CMakeFiles/app.dir/src/main.cpp.o
  /home/nizar/game_rsc/_deps/raylib-src/src/raymath.h
  /home/nizar/game_rsc/libs/entity.h
  /home/nizar/game_rsc/libs/levels.h
+ /home/nizar/game_rsc/libs/physac.h
  /home/nizar/game_rsc/libs/tiles.h
  /home/nizar/game_rsc/libs/types.h
  /usr/include/alloca.h
@@ -537,6 +543,7 @@ CMakeFiles/app.dir/src/main.cpp.o
  /usr/include/c++/14.1.1/span
  /usr/include/c++/14.1.1/stdexcept
  /usr/include/c++/14.1.1/stdfloat
+ /usr/include/c++/14.1.1/stdlib.h
  /usr/include/c++/14.1.1/streambuf
  /usr/include/c++/14.1.1/string
  /usr/include/c++/14.1.1/string_view
@@ -601,6 +608,7 @@ CMakeFiles/app.dir/src/main.cpp.o
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
  /usr/include/sys/syscall.h
+ /usr/include/sys/time.h
  /usr/include/sys/types.h
  /usr/include/syscall.h
  /usr/include/time.h
